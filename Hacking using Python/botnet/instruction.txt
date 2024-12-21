@@ -1,0 +1,15 @@
+run ipconfig command in pc and copy paste ip address in file bot1.py
+now follow below steps
+
+1. run bot_server.py
+2. run bot1.py
+3. send message to boit1 from bot server.
+4. bot1 will recieve message it your pc ipaddress is feeded.
+
+this sytem was developed from motivation of local chatbot from windows 7 professional version
+where you can chat with any pc within lan and can communicate with server also.
+But it had some issues with it like,
+1. any pc can talk to any pc without permission
+2. server can't examine the chats
+
+here we have removed both vulnerabilities like first ip address is must to chat and all messages will be monitored.

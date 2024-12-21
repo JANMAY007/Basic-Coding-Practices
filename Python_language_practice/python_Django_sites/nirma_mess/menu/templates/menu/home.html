@@ -1,0 +1,26 @@
+{% extends "menu/base.html" %}
+{% block content %}
+<br><br><br><br><br><br>
+<div class="row justify-content-center mt-5">
+    {% if user.is_autheticated %}
+        <div class="col-md-7 text-center">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Accusamus animi architecto atque
+                iusto necessitatibus nobis odio praesentium quidem quo?
+                Enim, labore magnam natus quis repellat
+                saepe temporibus voluptate voluptatem voluptatum.
+            </p>
+            <a role="button" class="btn btn-primary btn-lg" href="{% url 'signupuser' %}">
+                Lorem ipsum dolor sit amet.
+            </a>
+        </div>
+    {% else %}
+        <div class="col-md-7 text-center">
+            <h1>Check out Today's menu</h1>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

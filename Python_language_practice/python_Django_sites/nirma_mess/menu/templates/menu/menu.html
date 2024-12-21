@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body class="bg_image writing">
+{% extends 'menu/base.html' %}
+{% block content %}
+    <div class="container">
+        {% if Menu.feast %}
+            <h1>Hey, Feast is waiting</h1>
+        {% else %}
+            <h1>Lorem ipsum dolor sit.</h1>
+        {% endif %}
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">{{ Menu.food_type }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ Menu.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+{% endblock %}
+</body>
+</html>
